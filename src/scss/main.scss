@@ -8,19 +8,21 @@
 
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
-
+@import "settings/couleurs";
+@import "settings/fonts";
 
 
 
 // GENERIC
 // Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
-
+@import "generic/reset";
 
 
 
 // ELEMENTS
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
-
+@import "elements/body";
+@import "elements/titres";
 
 
 // COMPONENTS
@@ -38,68 +40,33 @@
 /* font-family: 'Bungee Shade', cursive; */
 
 /* LES VARIABLES CSS ICI */
-:root {
-  --font-principale: 'Cardo', serif;
-  --font-secondaire: 'Bungee Shade', cursive;
 
-  --black: #000;
-  --white: #fff;
-  --couleur-principale: #a7029a;
-  --couleur-secondaire: darkgray;
-  --degrade-principale: linear-gradient(36deg, rgba(167, 2, 154, 0.7) 0%, rgba(167, 2, 154, 0) 100%);
-}
+
 
 /*---------------------- Generic ----------------------*/
 
 /* Mettre la ligne universelle pour le box-sizing */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-li {
-  list-style: none;
-}
-
-h1, h2 {
-  margin: 0;
-}
-
-a:link {
-  color: var(--white);
-  text-decoration: none;
-}
+//*, *::before, *::after {
+//  box-sizing: border-box;
+//}
+//
+//li {
+//  list-style: none;
+//}
+//
+//h1, h2 {
+//  margin: 0;
+//}
+//
+//a:link {
+//  color: var(--white);
+//  text-decoration: none;
+//}
 
 
 /*---------------------- Elements ----------------------*/
-body {
-  font-family: Cardo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  background-color: aqua;
-  color: black;
-  margin: 0;
-  list-style: none;
-}
 
-h1 {
-  font-family: Bungee Shade;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 43px;
-  color: #FFFFFF;
-}
 
-h2 {
-  font-family: Bungee Shade;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 80px;
-  line-height: 96px;
-  color: #FFFFFF;
-}
 
 .hero {
   height: 80vh;

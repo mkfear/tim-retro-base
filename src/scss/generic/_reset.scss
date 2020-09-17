@@ -1,0 +1,16 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+a:link {
+  color: var(--white);
+  text-decoration: none;
+}
