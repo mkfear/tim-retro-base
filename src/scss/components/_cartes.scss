@@ -1,0 +1,38 @@
+
+.cartes {
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-between;
+}
+.carte{
+
+
+
+  width: 352px;
+  height: 367px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px 10px ;
+
+
+
+}
+.carte h4{
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
+carte p{
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+}

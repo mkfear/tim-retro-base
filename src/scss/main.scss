@@ -1,258 +1,32 @@
 
-
-
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
-
-
-
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
 @import "settings/couleurs";
 @import "settings/fonts";
-
-
-
 // GENERIC
 // Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
 @import "generic/reset";
-
-
-
 // ELEMENTS
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
 @import "elements/body";
 @import "elements/titres";
-
-
+@import "elements/footer";
+@import "elements/conteneur";
+@import "elements/header";
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
-
-
-
-
+@import "components/hero";
+@import "components/interet";
+@import "components/cartes";
+@import "components/citations";
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
 /*---------------------- Settings ----------------------*/
-
-/* font-family: 'Cardo', serif; */
-/* font-family: 'Bungee Shade', cursive; */
-
-/* LES VARIABLES CSS ICI */
-
-
-
 /*---------------------- Generic ----------------------*/
-
-/* Mettre la ligne universelle pour le box-sizing */
-//*, *::before, *::after {
-//  box-sizing: border-box;
-//}
-//
-//li {
-//  list-style: none;
-//}
-//
-//h1, h2 {
-//  margin: 0;
-//}
-//
-//a:link {
-//  color: var(--white);
-//  text-decoration: none;
-//}
-
-
-/*---------------------- Elements ----------------------*/
-
-
-
-.hero {
-  height: 80vh;
-
-  background-color: var(--black);
-
-  position: relative;
-}
-
-.hero video {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  opacity: 0.5;
-}
-
-.hero .content {
-  width: 100%;
-  height: 100%;
-
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  background: var(--degrade-principale);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.hero::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-}
-
-
-.hero p, .hero a {
-  font-size: 24px;
-}
-.interet .conteneur{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.cartes {
-  display: flex;
-  flex-flow: row wrap;
-
-  justify-content: space-between;
-}
-.carte{
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-
-
-
-  width: 352px;
-  height: 367px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  margin: 10px 10px ;
-}
-.carte h4{
-  font-family: Cardo;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-
-  text-transform: uppercase;
-}
-carte p{
-  font-family: Cardo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-
-}
-.interet{
-  background-image: url("../images/bg-interet.jpg");
-  background-attachment: fixed;
-}
-.citation{
-  margin: 0px;
-
-
-
-
-}
-.citation .conteneur{
-  background-image: url("../images/bg-citation.png");
-  position: relative;
-
-}
-
-
-.citation h3{
-  margin: 0px;
-
-  font-family: Cardo;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 54px;
-  text-transform: uppercase;
-
-  color: #FFFFFF;
-}
-.citation p{
-  margin: 0px;
-  font-family: Cardo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-
-  color: #FFFFFF;
-
-
-
-  color: #FFFFFF;
-}
-footer {
-  font-family: Cardo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-
-  color: #FFFFFF;
-
-  background: black;
-  width: 100%;
-  height: 144px;
-  left: 0px;
-}
-.footer-principal {
-  display: flex;
-  align-items: center;
-}
-
-.footer-principal p{
-  margin: 0px;
-  padding: 0px;
-}
-
+/*---------------------- Elements ----------------------*
 /*---------------------- Components ----------------------*/
-
-.conteneur {
-  max-width: 1142px;
-  margin: 0 auto;
-
-}
-
-.header-principal {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  align-content: flex-start;
-
-  width: 100%;
-  height: 73px;
-
-  background: #000000;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
-
 /*---------------------- Utilities ----------------------*/
 

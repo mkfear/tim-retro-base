@@ -1,0 +1,36 @@
+.citation {
+  margin: 0px;
+
+  h3 {
+    margin: 0px;
+
+    font-family: Cardo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+
+  p {
+    margin: 0px;
+    font-family: Cardo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+
+    color: #FFFFFF;
+  }
+}
+
+.citation .conteneur {
+  background-image: url("../../images/bg-citation.png");
+  position: relative;
+}
+
